@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anandi Enterprises</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Anandi Enterprises</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Your Link to India’s Favorite Frozen Delights</h1>
+      <p>From Amul to You — Fresh, Frozen, Fast.</p>
+      <a href="#products" class="cta-button">Explore Products</a>
+    </div>
+  </section>
+  
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>
+      Anandi Enterprises is a proud B2B distributor of Amul’s premium ice creams and frozen snacks in Jamshedpur, India. 
+      We work with retailers, restaurants, and event companies to deliver high-quality frozen products with 
+      speed and care.
+    </p>
+    <h3>Our Vision</h3>
+    <p>
+      To be the leading cold-chain distribution partner for Amul ice creams and frozen snacks, 
+      recognized for reliability, freshness, and service excellence across every destination we serve.
+    </p>
+    <h3>Our Mission</h3>
+    <p>
+      Our mission is to ensure the seamless and timely delivery of Amul’s premium products while 
+      maintaining the highest standards of quality and customer satisfaction. 
+      From Amul to You—Fresh, Frozen, Fast.
+    </p>
+  </section>
+
+
+  <!-- PRODUCT HIGHLIGHTS -->
+  <section id="products" class="products-section">
+    <h2>Our Product Range</h2>
+    <div class="product-boxes">
+    <div class="product-boxes">
+   <div class="product-card">
+    <a href="frozen-snacks.html">
+      <img src="snacks.jpg" alt="Frozen Snacks">
+      <h3>Frozen Snacks</h3>
+      <p>Frozen Pizza, Parathas, Fries & more.</p>
+    </a>
+  </div>
+  
+  <div class="product-card">
+    <a href="icecreams.html">
+      <img src="icecream.jpg" alt="Ice Creams">
+      <h3>Ice Creams</h3>
+      <p>Wide range of Amul cones, cups, bars, bricks and tubs.</p>
+    </a>
+  </div>
+  
+  <div class="product-card">
+    <a href="dairy.html">
+      <img src="dairy.jpg" alt="Dairy Products">
+      <h3>Dairy Items</h3>
+      <p>Paneer, Cheese & more.</p>
+    </a>
+  </div>
+</section>
+  
+
+  <!-- CONTACT CTA -->
+  <section class="cta" id="partner">
+    <h2>Partner With Us</h2>
+    <p>Interested in bulk orders or dealership? Reach out now!</p>
+    <a href="tel:+917488976219" class="cta-button">Call Now</a>
+    <a href="mailto:anandidistributor@gmail.com" class="cta-button">Email Us</a>
+</section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/YOUR-ID-HERE" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message / Order Inquiry" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Anandi Enterprises, Jamshedpur. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <div id="thankyou-popup" class="popup">
+    <div class="popup-content">
+      <h2>Thank You!</h2>
+      <p>Your message has been sent. We’ll be in touch soon!</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+  
+</body>
+</html>
